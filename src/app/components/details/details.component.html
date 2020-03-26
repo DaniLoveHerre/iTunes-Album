@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <h2 class="w-100 text-center mt-4 mb-4 font-weight-bold">DETAILS</h2>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p (click)="goBack()" class="hand">« Go back</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-2 col-lg-12">
+            <img src="{{ actualAlbum.IMAGE }}" alt="card" />
+        </div>
+        <div class="col-xl-10  col-lg-12">
+            <p class="font-weight-bold">Title: <label>{{ actualAlbum.TITLE }}</label></p>
+            <p class="font-weight-bold">Quantity: <label>{{ actualAlbum.QUANTITY }} units</label></p>
+            <p class="font-weight-bold">Price: <label>{{ actualAlbum.PRICE }}</label></p>
+            <p class="font-weight-bold">Release date: <label>{{ actualAlbum.RELEASEDATE | date:'dd/MM/yyyy' }}</label></p>
+            <p class="font-weight-bold">Category: <label>{{ actualAlbum.CATEGORY }}</label></p>
+            <p class="font-weight-bold">Apple page: <a href="{{ actualAlbum.APPLE_PAGE }}">Go to apple page</a></p>
+            <p class="font-weight-bold">Artist page: <a href="{{ actualAlbum.ARTIST_PAGE }}">Go to artist page</a></p>
+            <p class="font-weight-bold">Copyright: <label>{{ actualAlbum.COPYRIGHT }}</label></p>
+        </div>
+    </div>
+</div>
