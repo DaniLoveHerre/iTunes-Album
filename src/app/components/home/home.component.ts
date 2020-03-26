@@ -29,6 +29,7 @@ export class HomeComponent implements OnInit {
   }
 
   getAlbums(): void {
+    this.loading = true;
     this.albumsList = [];
     this.serverService.getAppleAlbums(this.limit).subscribe(response => {
       response.body.feed.entry.forEach(element => {

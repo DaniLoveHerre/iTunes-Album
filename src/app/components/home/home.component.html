@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div class="row mt-4" *ngIf="(term !== undefined || term !== '' ? searchList.length === 0 : albumsList.length === 0) && !loading">
+    <div class="row mt-4" *ngIf="(term !== '' ? searchList.length === 0 : albumsList.length === 0) && !loading">
         <div class="col-12 text-center">
             <img src="./assets/img/loupe.svg" width="50" />
             <h3>No results found</h3>
